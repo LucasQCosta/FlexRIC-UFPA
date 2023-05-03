@@ -19,14 +19,12 @@ sudo apt install -y libsctp-dev cmake-curses-gui libpcre2-dev python3-dev
 sudo apt install -y python3.8
 
 # PCRE2 is a dependency to Swig
-wget https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.42/pcre2-10.42.tar.bz2
-tar -xf pcre2-10.42.tar.bz2
-cd pcre2-10.42/
-./configure --prefix=/usr --docdir=/usr/share/doc/pcre2-10.42 --enable-unicode --enable-jit --enable-pcre2-16 --enable-pcre2-32 --enable-pcre2grep-libz --enable-pcre2grep-libbz2 --enable-pcre2test-libreadline --disable-static
-make
-sudo make install
+wget https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.31/pcre2-10.31.tar.bz2
+tar -xf pcre2-10.31.tar.bz2
+cd pcre2-10.31/
+./configure --prefix=/usr --docdir=/usr/share/doc/pcre2-10.31 --enable-unicode --enable-jit --enable-pcre2-16 --enable-pcre2-32 --enable-pcre2grep-libz --enable-pcre2grep-libbz2 --enable-pcre2test-libreadline --disable-staticsudo make install
 cd ..
-sudo rm -r pcre2-10.42 pcre2-10.42.tar.bz2 
+sudo rm -r pcre2-10.31 pcre2-10.31.tar.bz2 
 
 # Swig is a dependency to FlexRIC
 git clone https://github.com/swig/swig.git
