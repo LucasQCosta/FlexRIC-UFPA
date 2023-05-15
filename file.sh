@@ -39,15 +39,3 @@ make
 sudo make install
 cd ..
 sudo rm -r swig
-
-# Cloning FlexRIC
-git clone https://gitlab.eurecom.fr/mosaic5g/flexric.git
-git checkout 480a273d9b2400323400450618088dee0db76738
-sed -ie 's/21/24/' flexric/examples/emulator/agent/test_agent.c
-sed -ie 's/22/25/' flexric/examples/emulator/agent/test_agent.c
-cd flexric
-mkdir build
-cd build
-cmake ..
-make 
-sudo make install
