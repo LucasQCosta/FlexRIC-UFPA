@@ -40,7 +40,7 @@ sudo rm -r swig
 
 # Cloning FlexRIC
 git clone https://gitlab.eurecom.fr/mosaic5g/flexric.git
-git checkout 480a273d9b2400323400450618088dee0db76738
+git checkout v2.0.0
 cd flexric
 mkdir build
 cd build
